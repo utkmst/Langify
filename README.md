@@ -1,3 +1,5 @@
+(https://ibb.co/tCfwNxc)
+
 # Langify: Language Detection Chatbot 🗣️🌍
 
 Langify is a Python-based chatbot that detects the language of input text using multiple language detection libraries and techniques. It combines the results from libraries like `langid`, `langdetect`, and `polyglot` to provide a robust language detection mechanism. The chatbot offers an engaging user experience with slow typing effects and the option to continue or exit the session.
