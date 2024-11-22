@@ -1,4 +1,5 @@
 
+file:///home/ashuredd/Downloads/Leonardo_Phoenix_A_stylized_logo_featuring_a_globe_emoji_set_a_2-removebg-preview.png
 
 # Langify: Language Detection Chatbot 🗣️🌍
 
