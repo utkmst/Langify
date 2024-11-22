@@ -39,14 +39,14 @@ pip install langid langdetect polyglot colorama langcodes
 1. **Clone the repository**:
 
    ```bash
-   git clone https://github.com/your-username/langify.git
-   cd langify
+   git clone https://github.com/utkmst/Langify.git
+   cd Langify
    ```
 
 2. **Run the chatbot**:
 
    ```bash
-   python langify.py
+   python Langify.py
    ```
 
 3. **Interact with Langify**:
