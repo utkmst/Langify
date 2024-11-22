@@ -1,5 +1,5 @@
 
-![Alt text](https://i.ibb.co/ThXDnbR/Leonardo-Phoenix-A-stylized-logo-featuring-a-globe-emoji-set-a-2-removebg-preview.png)
+![Alt text](https://camo.githubusercontent.com/445e08dc4241e9b0373c6179fdb8aa0b29fd063eef17541b8f0d8c49aa0072d9/68747470733a2f2f692e6962622e636f2f546858446e62522f4c656f6e6172646f2d50686f656e69782d412d7374796c697a65642d6c6f676f2d666561747572696e672d612d676c6f62652d656d6f6a692d7365742d612d322d72656d6f766562672d707265766965772e706e67)
 
 
 # Langify: Language Detection Chatbot 🗣️🌍
