@@ -8,10 +8,19 @@ import time
 from collections import Counter
 from polyglot.detect import Detector
 from polyglot.detect.base import logger
+import json
+
 logger.disabled = True
 
 init(autoreset=True)
 DetectorFactory.seed = 0
+
+# Load translations
+with open('localization.json', 'r') as f:
+    translations = json.load(f)
+
+def get_translation(key, lang='en'):
+    return translations.get(lang, {}).get(key, key)
 
 def extract_char_ngrams(text, n=3):
     """Extract character n-grams from the text."""
@@ -31,8 +40,6 @@ def detect_lang(text):
         polyglot_lang = detector.language.code
     except:
         polyglot_lang = "unknown"
-        if polyglot_lang == "unknown":
-            print("")
 
     # Extract character n-grams (trigrams by default)
     char_ngrams = extract_char_ngrams(text)
@@ -44,6 +51,9 @@ def detect_lang(text):
         # Voting mechanism
         votes = [langid_lang, langdetect_lang, polyglot_lang]
         final_lang = max(set(votes), key=votes.count)
+
+    if final_lang == "unknown" and langid_lang == "unknown" and langdetect_lang == "unknown" and polyglot_lang == "unknown":
+        print("Detector is not able to detect the language reliably.")
 
     return final_lang
 
@@ -67,34 +77,38 @@ def slow_input(input_text, delay=0.03):
         time.sleep(delay)
     return input()
 
-def continue_or_not():
+def continue_or_not(user_lang):
     while True:
         print(Fore.YELLOW + "Langify: " + Style.RESET_ALL, end="")
-        user_input = slow_input("Do you want to continue? (y/n): ")
-        if user_input.lower() == "n":
+        user_input = slow_input(get_translation('continue', user_lang))
+        if user_input.lower() == "n" or user_input.lower() == "h":
             print(Fore.RED + "Langify: " + Style.RESET_ALL, end="")
-            slow_typing("Goodbye!")
+            slow_typing(get_translation('goodbye', user_lang))
             return False
-        elif user_input.lower() == "y":
+        elif user_input.lower() == "y" or user_input.lower() == "e":
             return True
 
-def chatbot():
-    print(Fore.GREEN + "Welcome to Langify! Enter 'exit' to quit." + Style.RESET_ALL)
+def main():
+    user_lang = 'en'  # Default language
+    print(Fore.YELLOW + "Langify: " + Style.RESET_ALL, end="")
+    user_lang = input(get_translation('select_language', user_lang))
+    print(Fore.YELLOW + "Langify: " + Style.RESET_ALL, end="")
+    slow_typing(get_translation('welcome', user_lang))
+
     while True:
         print(Fore.YELLOW + "Langify: " + Style.RESET_ALL, end="")
-        text = slow_input("Enter text you want to be detected: ")
-        if text.lower() == "exit":
-            print(Fore.RED + "Langify: " + Style.RESET_ALL, end="")
-            slow_typing("Goodbye!")
+        text = slow_input(get_translation('enter_text', user_lang))
+        if text.lower() == 'exit':
+            print(Fore.YELLOW + "Langify: " + Style.RESET_ALL, end="")
+            slow_typing(get_translation('goodbye', user_lang))
             break
-        
-        detected_lang_code = detect_lang(text)
-        detected_lang_name = get_language_name(detected_lang_code)
+
+        detected_lang = detect_lang(text)
         print(Fore.YELLOW + "Langify: " + Style.RESET_ALL, end="")
-        slow_typing(f"Detected language: {detected_lang_name}")
-        
-        if not continue_or_not():
+        slow_typing(f"{get_translation('detected_language', user_lang)} {get_language_name(detected_lang)}")
+
+        if not continue_or_not(user_lang):
             break
 
 if __name__ == "__main__":
-    chatbot()
+    main()
