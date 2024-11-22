@@ -1,4 +1,4 @@
-![][https://ibb.co/tCfwNxc]
+
 
 # Langify: Language Detection Chatbot 🗣️🌍
 
