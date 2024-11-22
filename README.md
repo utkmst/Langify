@@ -11,6 +11,7 @@ Langify is a Python-based chatbot that detects the language of input text using 
 ## Features
 
 - **Multi-library Detection**: Integrates `langid`, `langdetect`, and `polyglot` for accurate language detection.
+- **Localization Support**: Uses a `localization.json` file for multilingual chatbot responses. Users can select their preferred language at the start of the session.
 - **Character n-gram Analysis**: Uses trigrams (or customizable n-grams) to analyze text characteristics.
 - **Interactive Chatbot Interface**: Engages users with slow-typing effects using the `colorama` library for colored prompts.
 - **Language Name Lookup**: Converts detected language codes to human-readable names using `langcodes`.
@@ -58,7 +59,8 @@ pip install langid langdetect polyglot colorama langcodes
 ## Example Interaction
 
 ```plaintext
-Welcome to Langify! Enter 'exit' to quit.
+Langify: Please select your language (default: en): en
+Langify: Welcome to Langify! Enter 'exit' to quit.
 Langify: Enter text you want to be detected: Bonjour, comment ça va ?
 Langify: Detected language: French
 Langify: Do you want to continue? (y/n): y
@@ -79,10 +81,14 @@ Langify: Goodbye!
      - `polyglot` uses statistical models for language detection.
    - Implements a **voting mechanism** to resolve conflicts between libraries.
 
-2. **Character n-grams**:
+2. **Localization**:
+   - Prompts and responses are translated based on the user's language selection.
+   - Uses a JSON file (localization.json) to store translations for multiple languages.
+
+3. **Character n-grams**:
    - Extracts and analyzes sequences of characters (e.g., trigrams) for additional language features.
 
-3. **Interactive Experience**:
+4. **Interactive Experience**:
    - Provides slow-typing effects for prompts and responses.
    - Allows users to choose whether to continue after each detection.
 
@@ -104,6 +110,6 @@ This project is licensed under the MIT License. See the `LICENSE` file for detai
 
 ---
 
-Enjoy using **Langify** to explore languages from around the world! 🌍✨
+Enjoy using **Langify** to explore languages from around the world in your preffered language! 🌍✨
 
 
