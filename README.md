@@ -1,5 +1,5 @@
 
-![Alt text](https://ibb.co/tCfwNxc)
+![Alt text](https://i.ibb.co/ThXDnbR/Leonardo-Phoenix-A-stylized-logo-featuring-a-globe-emoji-set-a-2-removebg-preview.png)
 
 
 # Langify: Language Detection Chatbot 🗣️🌍
