@@ -5,9 +5,18 @@ from colorama import init, Fore, Style
 import langcodes
 import sys
 import time
+from collections import Counter
+from polyglot.detect import Detector
+from polyglot.detect.base import logger
+logger.disabled = True
 
 init(autoreset=True)
 DetectorFactory.seed = 0
+
+def extract_char_ngrams(text, n=3):
+    """Extract character n-grams from the text."""
+    ngrams = [text[i:i+n] for i in range(len(text)-n+1)]
+    return Counter(ngrams)
 
 def detect_lang(text):
     langid_lang, langid_conf = langid.classify(text)
@@ -17,7 +26,26 @@ def detect_lang(text):
     except LangDetectException:
         langdetect_lang = "unknown"
 
-    return langid_lang if langid_conf > 0.5 else langdetect_lang
+    try:
+        detector = Detector(text)
+        polyglot_lang = detector.language.code
+    except:
+        polyglot_lang = "unknown"
+        if polyglot_lang == "unknown":
+            print("")
+
+    # Extract character n-grams (trigrams by default)
+    char_ngrams = extract_char_ngrams(text)
+
+    # Integrate n-grams into the detection logic
+    if langid_conf > 0.5:
+        final_lang = langid_lang
+    else:
+        # Voting mechanism
+        votes = [langid_lang, langdetect_lang, polyglot_lang]
+        final_lang = max(set(votes), key=votes.count)
+
+    return final_lang
 
 def get_language_name(lang_code):
     try:
