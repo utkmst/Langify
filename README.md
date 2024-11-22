@@ -1,3 +1,7 @@
+
+![Alt text](https://camo.githubusercontent.com/445e08dc4241e9b0373c6179fdb8aa0b29fd063eef17541b8f0d8c49aa0072d9/68747470733a2f2f692e6962622e636f2f546858446e62522f4c656f6e6172646f2d50686f656e69782d412d7374796c697a65642d6c6f676f2d666561747572696e672d612d676c6f62652d656d6f6a692d7365742d612d322d72656d6f766562672d707265766965772e706e67)
+
+
 # Langify: Language Detection Chatbot 🗣️🌍
 
 Langify is a Python-based chatbot that detects the language of input text using multiple language detection libraries and techniques. It combines the results from libraries like `langid`, `langdetect`, and `polyglot` to provide a robust language detection mechanism. The chatbot offers an engaging user experience with slow typing effects and the option to continue or exit the session.
@@ -28,3 +32,78 @@ You can install all dependencies with the following command:
 
 ```bash
 pip install langid langdetect polyglot colorama langcodes
+
+## Usage
+
+1. **Clone the repository**:
+
+   ```bash
+   git clone https://github.com/your-username/langify.git
+   cd langify
+   ```
+
+2. **Run the chatbot**:
+
+   ```bash
+   python langify.py
+   ```
+
+3. **Interact with Langify**:
+   - Enter text to detect its language.
+   - Respond to prompts to continue or exit the session.
+   - Type `exit` to quit the chatbot.
+
+---
+
+## Example Interaction
+
+```plaintext
+Welcome to Langify! Enter 'exit' to quit.
+Langify: Enter text you want to be detected: Bonjour, comment ça va ?
+Langify: Detected language: French
+Langify: Do you want to continue? (y/n): y
+Langify: Enter text you want to be detected: これは日本語のサンプルです
+Langify: Detected language: Japanese
+Langify: Do you want to continue? (y/n): n
+Langify: Goodbye!
+```
+
+---
+
+## How It Works
+
+1. **Language Detection**:
+   - Detects the language using three libraries:
+     - `langid` provides a language code and confidence score.
+     - `langdetect` detects the language or returns `unknown` if detection fails.
+     - `polyglot` uses statistical models for language detection.
+   - Implements a **voting mechanism** to resolve conflicts between libraries.
+
+2. **Character n-grams**:
+   - Extracts and analyzes sequences of characters (e.g., trigrams) for additional language features.
+
+3. **Interactive Experience**:
+   - Provides slow-typing effects for prompts and responses.
+   - Allows users to choose whether to continue after each detection.
+
+---
+
+## License
+
+This project is licensed under the MIT License. See the `LICENSE` file for details.
+
+---
+
+## Acknowledgements
+
+- [Langid](https://github.com/saffsd/langid.py)
+- [Langdetect](https://github.com/Mimino666/langdetect)
+- [Polyglot](https://polyglot.readthedocs.io/)
+- [Colorama](https://pypi.org/project/colorama/)
+- [Langcodes](https://pypi.org/project/langcodes/)
+
+---
+
+Enjoy using **Langify** to explore languages from around the world! 🌍✨
+
+
