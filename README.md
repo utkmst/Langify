@@ -55,7 +55,22 @@ pip install langid langdetect polyglot colorama langcodes
    - Type `exit` to quit the chatbot.
 
 ---
-
+## Languages that Supported:
+   ![Alt text](https://i.ibb.co/RzS7DPM/Map-Chart-Map.png)
+   -🇬🇧English
+   -🇨🇳Chinese
+   -🇪🇸Spanish
+   -🇷🇺Russian
+   -🇯🇵Japanese
+   -🇰🇷Korean
+   -🇹🇷Turkish
+   -🇩🇪German
+   -🇫🇷French
+   -🇮🇩Indonesian
+   -🇵🇹Portugal
+   -🇷🇸Serbian
+   -🇲🇰Macedonian
+   -🇬🇷Greek
 ## Example Interaction
 
 ```plaintext
