@@ -58,7 +58,7 @@ pip install langid langdetect polyglot colorama langcodes
    - Type `summary` if you want a summary of detected languages by models.
 
 ---
-## Languages that Supported:
+## Languages that Supported in Interface:
 ![Alt text](https://camo.githubusercontent.com/8548b13d042708a4b1dc471fc1a234d6b883b37bbddbb160315ca0690d89edb0/68747470733a2f2f692e6962622e636f2f3573475750374e2f696d6167652e706e67)
 
    -🇬🇧English
