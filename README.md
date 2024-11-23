@@ -47,6 +47,8 @@ pip install langid langdetect polyglot colorama langcodes
 
    ```bash
    python Langify.py
+   or
+   python Langify.py --lang 'code of the language you want it to be continue with'
    ```
 
 3. **Interact with Langify**:
@@ -85,6 +87,11 @@ pip install langid langdetect polyglot colorama langcodes
    -🇲🇰Macedonian
    
    -🇬🇷Greek
+
+   -🇮🇹Italian
+
+   -🇳🇱Dutch
+
 ## Example Interaction
 
 ```plaintext
