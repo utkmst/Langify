@@ -9,6 +9,7 @@ from collections import Counter
 from polyglot.detect import Detector
 from polyglot.detect.base import logger
 import json
+import argparse
 
 logger.disabled = True
 
@@ -55,11 +56,16 @@ def detect_lang(text):
     if final_lang == "unknown" and langid_lang == "unknown" and langdetect_lang == "unknown" and polyglot_lang == "unknown":
         print("Detector is not able to detect the language reliably.")
 
-    return final_lang
+    return {
+        "final_lang": final_lang,
+        "langid_lang": langid_lang,
+        "langdetect_lang": langdetect_lang,
+        "polyglot_lang": polyglot_lang
+    }
 
-def get_language_name(lang_code):
+def get_language_name(lang_code, user_lang='en'):
     try:
-        return langcodes.Language.get(lang_code).display_name()
+        return langcodes.Language.get(lang_code).display_name(user_lang)
     except:
         return "Unknown"
 
@@ -70,7 +76,7 @@ def slow_typing(text, delay=0.03):
         time.sleep(delay)
     print()
 
-def slow_input(input_text, delay=0.03):
+def slow_input(input_text, delay=0.03, end='\n'):
     for char in input_text:
         sys.stdout.write(char)
         sys.stdout.flush()
@@ -89,9 +95,13 @@ def continue_or_not(user_lang):
             return True
 
 def main():
-    user_lang = 'en'  # Default language
+    parser = argparse.ArgumentParser(description="Langify - Language Detection Tool")
+    parser.add_argument('--lang', type=str, default='en', help='select_language')
+    args = parser.parse_args()
+
+    user_lang = args.lang
     print(Fore.YELLOW + "Langify: " + Style.RESET_ALL, end="")
-    user_lang = input(get_translation('select_language', user_lang))
+    user_lang = slow_input(get_translation('select_language', user_lang))
     print(Fore.YELLOW + "Langify: " + Style.RESET_ALL, end="")
     slow_typing(get_translation('welcome', user_lang))
 
@@ -103,9 +113,31 @@ def main():
             slow_typing(get_translation('goodbye', user_lang))
             break
 
-        detected_lang = detect_lang(text)
-        print(Fore.YELLOW + "Langify: " + Style.RESET_ALL, end="")
-        slow_typing(f"{get_translation('detected_language', user_lang)} {get_language_name(detected_lang)}")
+        if text.lower() == 'summary':
+            print(Fore.YELLOW + "Langify: " + Style.RESET_ALL, end="")
+            slow_typing(get_translation('enter_text', user_lang), end="")
+            text = slow_input("")
+            detection_result = detect_lang(text)
+            final_lang = detection_result["final_lang"]
+            langid_lang = detection_result["langid_lang"]
+            langdetect_lang = detection_result["langdetect_lang"]
+            polyglot_lang = detection_result["polyglot_lang"]
+
+            print(Fore.YELLOW + "Langify: " + Style.RESET_ALL, end="")
+            slow_typing(f"{get_translation('detected_language', user_lang)} {get_language_name(final_lang, user_lang)}")
+
+            print(Fore.YELLOW + "Langify: " + Style.RESET_ALL, end="")
+            slow_typing(get_translation('summary', user_lang))
+            slow_typing(f"  final: {get_language_name(final_lang, user_lang)}")
+            slow_typing(f"  langid: {get_language_name(langid_lang, user_lang)}")
+            slow_typing(f"  langdetect: {get_language_name(langdetect_lang, user_lang)}")
+            slow_typing(f"  polyglot: {get_language_name(polyglot_lang, user_lang)}")
+        else:
+            detection_result = detect_lang(text)
+            final_lang = detection_result["final_lang"]
+
+            print(Fore.YELLOW + "Langify: " + Style.RESET_ALL, end="")
+            slow_typing(f"{get_translation('detected_language', user_lang)} {get_language_name(final_lang, user_lang)}")
 
         if not continue_or_not(user_lang):
             break

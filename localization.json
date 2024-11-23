@@ -5,7 +5,8 @@
         "enter_text": "Enter text you want to be detected: ",
         "detected_language": "Detected language: ",
         "continue": "Do you want to continue? (y/n): ",
-        "goodbye": "Goodbye!"
+        "goodbye": "Goodbye!",
+        "summary": "Summary of detection results: "
     },
     "tr": {
         "select_language": "Lütfen dilinizi seçin: ",
@@ -13,7 +14,8 @@
         "enter_text": "Tespit edilmesini istediğiniz metni girin: ",
         "detected_language": "Tespit edilen dil: ",
         "continue": "Devam etmek istiyor musunuz? (e/h): ",
-        "goodbye": "Hoşçakal!"
+        "goodbye": "Hoşçakal!",
+        "summary": "Tespit sonuçlarının özeti: "
     },
     "fr": {
         "select_language": "Veuillez sélectionner votre langue: ",
@@ -21,7 +23,8 @@
         "enter_text": "Entrez le texte que vous souhaitez détecter: ",
         "detected_language": "Langue détectée: ",
         "continue": "Voulez-vous continuer? (o/n): ",
-        "goodbye": "Au revoir!"
+        "goodbye": "Au revoir!",
+        "summary": "Résumé des résultats de détection: "
     },
     "kr": {
         "select_language": "언어를 선택하십시오: ",
@@ -29,7 +32,8 @@
         "enter_text": "감지하려는 텍스트를 입력하십시오: ",
         "detected_language": "감지된 언어: ",
         "continue": "계속 하시겠습니까? (y/n): ",
-        "goodbye": "안녕!"
+        "goodbye": "안녕!",
+        "summary": "감지 결과 요약: "
     },
     "es": {
         "select_language": "Por favor, seleccione su idioma: ",
@@ -37,7 +41,8 @@
         "enter_text": "Ingrese el texto que desea detectar: ",
         "detected_language": "Idioma detectado: ",
         "continue": "¿Quieres continuar? (s/n): ",
-        "goodbye": "¡Adiós!"
+        "goodbye": "¡Adiós!",
+        "summary": "Resumen de los resultados de detección: "
     },
     "ch": {
         "select_language": "请选择您的语言： ",
@@ -45,7 +50,8 @@
         "enter_text": "输入要检测的文本： ",
         "detected_language": "检测到的语言： ",
         "continue": "您要继续吗？(y/n)： ",
-        "goodbye": "再见！"
+        "goodbye": "再见！",
+        "summary": "检测结果摘要： "
     },
     "jp": {
         "select_language": "言語を選択してください： ",
@@ -53,7 +59,8 @@
         "enter_text": "検出したいテキストを入力してください： ",
         "detected_language": "検出された言語： ",
         "continue": "続行しますか？(y/n)： ",
-        "goodbye": "さようなら！"
+        "goodbye": "さようなら！",
+        "summary": "検出結果の要約： "
     },
     "id": {
         "select_language": "Silakan pilih bahasa Anda: ",
@@ -61,7 +68,8 @@
         "enter_text": "Masukkan teks yang ingin Anda deteksi: ",
         "detected_language": "Bahasa yang terdeteksi: ",
         "continue": "Apakah Anda ingin melanjutkan? (y/t): ",
-        "goodbye": "Selamat tinggal!"
+        "goodbye": "Selamat tinggal!",
+        "summary": "Ringkasan hasil deteksi: "  
     },
     "pt": {
         "select_language": "Por favor, selecione seu idioma: ",
@@ -69,7 +77,8 @@
         "enter_text": "Digite o texto que deseja detectar: ",
         "detected_language": "Idioma detectado: ",
         "continue": "Deseja continuar? (s/n): ",
-        "goodbye": "Adeus!"
+        "goodbye": "Adeus!",
+        "summary": "Resumo dos resultados de detecção: "
     },
     "ru": {
         "select_language": "Пожалуйста, выберите ваш язык: ",
@@ -77,7 +86,8 @@
         "enter_text": "Введите текст, который вы хотите обнаружить: ",
         "detected_language": "Обнаруженный язык: ",
         "continue": "Хотите продолжить? (y/n): ",
-        "goodbye": "До свидания!"
+        "goodbye": "До свидания!",
+        "summary": "Сводка результатов обнаружения: "
     },
     "de": {
         "select_language": "Bitte wählen Sie Ihre Sprache: ",
@@ -85,7 +95,8 @@
         "enter_text": "Geben Sie den Text ein, den Sie erkennen möchten: ",
         "detected_language": "Erkannte Sprache: ",
         "continue": "Möchten Sie fortfahren? (j/n): ",
-        "goodbye": "Auf Wiedersehen!"
+        "goodbye": "Auf Wiedersehen!",
+        "summary": "Zusammenfassung der Erkennungsergebnisse: "
     },
     "sr": {
         "select_language": "Молимо вас изаберите језик: ",
@@ -93,7 +104,8 @@
         "enter_text": "Унесите текст који желите да откријете: ",
         "detected_language": "Откривени језик: ",
         "continue": "Да ли желите наставити? (d/n): ",
-        "goodbye": "Довиђења!"
+        "goodbye": "Довиђења!",
+        "summary": "Резиме резултата откривања: "
     },
     "mk": {
         "select_language": "Ве молиме изберете јазик: ",
@@ -101,7 +113,8 @@
         "enter_text": "Внесете текст што сакате да се открие: ",
         "detected_language": "Откриен јазик: ",
         "continue": "Сакате ли да продолжите? (d/n): ",
-        "goodbye": "Довидување!"
+        "goodbye": "Довидување!",
+        "summary": "Резиме на резултатите од откривањето: "
     },
     "gr": {
         "select_language": "Παρακαλώ επιλέξτε τη γλώσσα σας: ",
@@ -109,7 +122,26 @@
         "enter_text": "Εισάγετε το κείμενο που θέλετε να ανιχνευθεί: ",
         "detected_language": "Ανιχνευμένη γλώσσα: ",
         "continue": "Θέλετε να συνεχίσετε; (ν/ο): ",
-        "goodbye": "Αντίο!"
+        "goodbye": "Αντίο!",
+        "summary": "Σύνοψη των αποτελεσμάτων ανίχνευσης: "
+    },
+    "it": {
+        "select_language": "Si prega di selezionare la lingua: ",
+        "welcome": "Benvenuti in Langify! Inserisci 'exit' per uscire.",
+        "enter_text": "Inserisci il testo che desideri rilevare: ",
+        "detected_language": "Lingua rilevata: ",
+        "continue": "Vuoi continuare? (s/n): ",
+        "goodbye": "Arrivederci!",
+        "summary": "Sommario dei risultati del rilevamento: "
+    },
+    "nl": {
+        "select_language": "Selecteer uw taal: ",
+        "welcome": "Welkom bij Langify! Voer 'exit' in om te stoppen.",
+        "enter_text": "Voer de tekst in die u wilt detecteren: ",
+        "detected_language": "Gedetecteerde taal: ",
+        "continue": "Wilt u doorgaan? (j/n): ",
+        "goodbye": "Tot ziens!",
+        "summary": "Samenvatting van detectieresultaten: "
     }
 }
 
