@@ -55,6 +55,7 @@ pip install langid langdetect polyglot colorama langcodes
    - Enter text to detect its language.
    - Respond to prompts to continue or exit the session.
    - Type `exit` to quit the chatbot.
+   - Type `summary` if you want a summary of detected languages by models.
 
 ---
 ## Languages that Supported:
