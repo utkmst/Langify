@@ -58,7 +58,7 @@ pip install langid langdetect polyglot colorama langcodes
 
 ---
 ## Languages that Supported:
-![Alt text](https://camo.githubusercontent.com/17ecfcef936da04ba453a8caa13a6d541174d85473c669997870d52afd4a6ff2/68747470733a2f2f692e6962622e636f2f6a54326b5263342f4d61702d43686172742d4d61702e706e67)
+![Alt text](https://i.ibb.co/5sGWP7N/image.png)
 
    -🇬🇧English
    
