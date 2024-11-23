@@ -39,14 +39,14 @@ pip install langid langdetect polyglot colorama langcodes
 1. **Clone the repository**:
 
    ```bash
-   git clone https://github.com/your-username/langify.git
-   cd langify
+   git clone https://github.com/utkmst/Langify.git
+   cd Langify
    ```
 
 2. **Run the chatbot**:
 
    ```bash
-   python langify.py
+   python Langify.py
    ```
 
 3. **Interact with Langify**:
@@ -55,7 +55,36 @@ pip install langid langdetect polyglot colorama langcodes
    - Type `exit` to quit the chatbot.
 
 ---
+## Languages that Supported:
+![Alt text](https://camo.githubusercontent.com/17ecfcef936da04ba453a8caa13a6d541174d85473c669997870d52afd4a6ff2/68747470733a2f2f692e6962622e636f2f6a54326b5263342f4d61702d43686172742d4d61702e706e67)
 
+   -🇬🇧English
+   
+   -🇨🇳Chinese
+   
+   -🇪🇸Spanish
+   
+   -🇷🇺Russian
+   
+   -🇯🇵Japanese
+   
+   -🇰🇷Korean
+   
+   -🇹🇷Turkish
+   
+   -🇩🇪German
+   
+   -🇫🇷French
+   
+   -🇮🇩Indonesian
+   
+   -🇵🇹Portugal
+   
+   -🇷🇸Serbian
+   
+   -🇲🇰Macedonian
+   
+   -🇬🇷Greek
 ## Example Interaction
 
 ```plaintext
