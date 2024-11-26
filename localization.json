@@ -6,7 +6,9 @@
         "detected_language": "Detected language: ",
         "continue": "Do you want to continue? (y/n): ",
         "goodbye": "Goodbye!",
-        "summary": "Summary of detection results: "
+        "summary": "Summary of detection results: ",
+        "file_path": "Enter the path of the file you want to be detected: ",
+        "error_file_reading": "Error reading file: "
     },
     "tr": {
         "select_language": "Lütfen dilinizi seçin: ",
@@ -15,7 +17,9 @@
         "detected_language": "Tespit edilen dil: ",
         "continue": "Devam etmek istiyor musunuz? (e/h): ",
         "goodbye": "Hoşçakal!",
-        "summary": "Tespit sonuçlarının özeti: "
+        "summary": "Tespit sonuçlarının özeti: ",
+        "file_path": "Tespit edilmesini istediğiniz dosyanın yolunu girin: ",
+        "error_file_reading": "Dosya okunurken hata oluştu: "
     },
     "fr": {
         "select_language": "Veuillez sélectionner votre langue: ",
@@ -24,7 +28,9 @@
         "detected_language": "Langue détectée: ",
         "continue": "Voulez-vous continuer? (o/n): ",
         "goodbye": "Au revoir!",
-        "summary": "Résumé des résultats de détection: "
+        "summary": "Résumé des résultats de détection: ",
+        "file_path": "Entrez le chemin du fichier que vous souhaitez détecter: ",
+        "error_file_reading": "Erreur de lecture du fichier: "
     },
     "kr": {
         "select_language": "언어를 선택하십시오: ",
@@ -33,7 +39,9 @@
         "detected_language": "감지된 언어: ",
         "continue": "계속 하시겠습니까? (y/n): ",
         "goodbye": "안녕!",
-        "summary": "감지 결과 요약: "
+        "summary": "감지 결과 요약: ",
+        "file_path": "감지하려는 파일의 경로를 입력하십시오: ",
+        "error_file_reading": "파일 읽기 오류: "
     },
     "es": {
         "select_language": "Por favor, seleccione su idioma: ",
@@ -42,7 +50,9 @@
         "detected_language": "Idioma detectado: ",
         "continue": "¿Quieres continuar? (s/n): ",
         "goodbye": "¡Adiós!",
-        "summary": "Resumen de los resultados de detección: "
+        "summary": "Resumen de los resultados de detección: ",
+        "file_path": "Ingrese la ruta del archivo que desea detectar: ",
+        "error_file_reading": "Error al leer el archivo: "
     },
     "ch": {
         "select_language": "请选择您的语言： ",
@@ -51,7 +61,9 @@
         "detected_language": "检测到的语言： ",
         "continue": "您要继续吗？(y/n)： ",
         "goodbye": "再见！",
-        "summary": "检测结果摘要： "
+        "summary": "检测结果摘要： ",
+        "file_path": "输入要检测的文件路径： ",
+        "error_file_reading": "读取文件时出错： "
     },
     "jp": {
         "select_language": "言語を選択してください： ",
@@ -60,7 +72,9 @@
         "detected_language": "検出された言語： ",
         "continue": "続行しますか？(y/n)： ",
         "goodbye": "さようなら！",
-        "summary": "検出結果の要約： "
+        "summary": "検出結果の要約： ",
+        "file_path": "検出したいファイルのパスを入力してください： ",
+        "error_file_reading": "ファイルの読み取りエラー： "
     },
     "id": {
         "select_language": "Silakan pilih bahasa Anda: ",
@@ -69,7 +83,9 @@
         "detected_language": "Bahasa yang terdeteksi: ",
         "continue": "Apakah Anda ingin melanjutkan? (y/t): ",
         "goodbye": "Selamat tinggal!",
-        "summary": "Ringkasan hasil deteksi: "  
+        "summary": "Ringkasan hasil deteksi: ",
+        "file_path": "Masukkan jalur file yang ingin Anda deteksi: ",
+        "error_file_reading": "Kesalahan membaca file: "
     },
     "pt": {
         "select_language": "Por favor, selecione seu idioma: ",
@@ -78,7 +94,9 @@
         "detected_language": "Idioma detectado: ",
         "continue": "Deseja continuar? (s/n): ",
         "goodbye": "Adeus!",
-        "summary": "Resumo dos resultados de detecção: "
+        "summary": "Resumo dos resultados de detecção: ",
+        "file_path": "Digite o caminho do arquivo que deseja detectar: ",
+        "error_file_reading": "Erro ao ler arquivo: "
     },
     "ru": {
         "select_language": "Пожалуйста, выберите ваш язык: ",
@@ -87,7 +105,9 @@
         "detected_language": "Обнаруженный язык: ",
         "continue": "Хотите продолжить? (y/n): ",
         "goodbye": "До свидания!",
-        "summary": "Сводка результатов обнаружения: "
+        "summary": "Сводка результатов обнаружения: ",
+        "file_path": "Введите путь к файлу, который вы хотите обнаружить: ",
+        "error_file_reading": "Ошибка чтения файла: "
     },
     "de": {
         "select_language": "Bitte wählen Sie Ihre Sprache: ",
@@ -96,7 +116,9 @@
         "detected_language": "Erkannte Sprache: ",
         "continue": "Möchten Sie fortfahren? (j/n): ",
         "goodbye": "Auf Wiedersehen!",
-        "summary": "Zusammenfassung der Erkennungsergebnisse: "
+        "summary": "Zusammenfassung der Erkennungsergebnisse: ",
+        "file_path": "Geben Sie den Pfad der Datei ein, die Sie erkennen möchten: ",
+        "error_file_reading": "Fehler beim Lesen der Datei: "
     },
     "sr": {
         "select_language": "Молимо вас изаберите језик: ",
@@ -105,7 +127,9 @@
         "detected_language": "Откривени језик: ",
         "continue": "Да ли желите наставити? (d/n): ",
         "goodbye": "Довиђења!",
-        "summary": "Резиме резултата откривања: "
+        "summary": "Резиме резултата откривања: ",
+        "file_path": "Унесите путању датотеке коју желите да откријете: ",
+        "error_file_reading": "Грешка при читању датотеке: "
     },
     "mk": {
         "select_language": "Ве молиме изберете јазик: ",
@@ -114,7 +138,9 @@
         "detected_language": "Откриен јазик: ",
         "continue": "Сакате ли да продолжите? (d/n): ",
         "goodbye": "Довидување!",
-        "summary": "Резиме на резултатите од откривањето: "
+        "summary": "Резиме на резултатите од откривањето: ",
+        "file_path": "Внесете патека на датотеката што сакате да се открие: ",
+        "error_file_reading": "Грешка при читање на датотеката: "
     },
     "gr": {
         "select_language": "Παρακαλώ επιλέξτε τη γλώσσα σας: ",
@@ -123,7 +149,9 @@
         "detected_language": "Ανιχνευμένη γλώσσα: ",
         "continue": "Θέλετε να συνεχίσετε; (ν/ο): ",
         "goodbye": "Αντίο!",
-        "summary": "Σύνοψη των αποτελεσμάτων ανίχνευσης: "
+        "summary": "Σύνοψη των αποτελεσμάτων ανίχνευσης: ",
+        "file_path": "Εισάγετε τη διαδρομή του αρχείου που θέλετε να ανιχνευθεί: ",
+        "error_file_reading": "Σφάλμα ανάγνωσης αρχείου: "
     },
     "it": {
         "select_language": "Si prega di selezionare la lingua: ",
@@ -132,7 +160,9 @@
         "detected_language": "Lingua rilevata: ",
         "continue": "Vuoi continuare? (s/n): ",
         "goodbye": "Arrivederci!",
-        "summary": "Sommario dei risultati del rilevamento: "
+        "summary": "Sommario dei risultati del rilevamento: ",
+        "file_path": "Inserisci il percorso del file che desideri rilevare: ",
+        "error_file_reading": "Errore di lettura del file: "
     },
     "nl": {
         "select_language": "Selecteer uw taal: ",
@@ -141,7 +171,9 @@
         "detected_language": "Gedetecteerde taal: ",
         "continue": "Wilt u doorgaan? (j/n): ",
         "goodbye": "Tot ziens!",
-        "summary": "Samenvatting van detectieresultaten: "
+        "summary": "Samenvatting van detectieresultaten: ",
+        "file_path": "Voer het pad van het bestand in dat u wilt detecteren: ",
+        "error_file_reading": "Fout bij het lezen van het bestand: "
     }
 }
 
