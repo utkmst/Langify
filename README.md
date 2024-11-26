@@ -47,16 +47,19 @@ pip install langid langdetect polyglot colorama langcodes
 
    ```bash
    python Langify.py
+   or
+   python Langify.py --lang 'code of the language you want it to be continue with'
    ```
 
 3. **Interact with Langify**:
    - Enter text to detect its language.
    - Respond to prompts to continue or exit the session.
    - Type `exit` to quit the chatbot.
+   - Type `summary` if you want a summary of detected languages by models.
 
 ---
-## Languages that Supported:
-![Alt text](https://camo.githubusercontent.com/17ecfcef936da04ba453a8caa13a6d541174d85473c669997870d52afd4a6ff2/68747470733a2f2f692e6962622e636f2f6a54326b5263342f4d61702d43686172742d4d61702e706e67)
+## Languages that Supported in Interface:
+![Alt text](https://camo.githubusercontent.com/8548b13d042708a4b1dc471fc1a234d6b883b37bbddbb160315ca0690d89edb0/68747470733a2f2f692e6962622e636f2f3573475750374e2f696d6167652e706e67)
 
    -🇬🇧English
    
@@ -85,6 +88,11 @@ pip install langid langdetect polyglot colorama langcodes
    -🇲🇰Macedonian
    
    -🇬🇷Greek
+
+   -🇮🇹Italian
+
+   -🇳🇱Dutch
+
 ## Example Interaction
 
 ```plaintext
